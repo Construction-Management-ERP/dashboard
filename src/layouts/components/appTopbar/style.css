@@ -1,0 +1,12 @@
+.topbar-title {
+    padding: 15px;
+}
+
+.p-toolbar-group-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.p-toolbar-group-right > .p-button {
+    margin-left: 20px;
+}

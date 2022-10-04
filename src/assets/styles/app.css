@@ -1,0 +1,44 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.app-wrapper {
+    background-color: #f8f9fa;
+}
+
+.height-fullscreen {
+    height: 100vh;
+}
+
+.fullscreen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+@import url('./toolbar.css');
