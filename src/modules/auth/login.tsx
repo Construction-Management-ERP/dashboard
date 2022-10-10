@@ -1,4 +1,3 @@
-
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import { Checkbox } from 'primereact/checkbox';
@@ -6,7 +5,9 @@ import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.css';
 import 'primeflex/primeflex.css';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { Avatar } from 'primereact/avatar';
+import defaultLogo from '../../assets/images/default-logo.png';
 
 
 export const Login = () => {
@@ -16,7 +17,11 @@ export const Login = () => {
        
         <div className="m-auto static surface-card p-4 shadow-2 border-round w-full lg:w-6">
             <div className="text-center mb-5">
-                <img src="default-logo.jpg" alt="logo" height={5} className="mb-3" />
+            <Avatar 
+                image={defaultLogo}
+                size="large"
+                shape="circle"
+            />
                 <div className="text-900 text-3xl font-medium mb-3">Welcome Back</div>
                 <span className="text-600 font-medium line-height-3">Don't have an account?</span>
                 <a className="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create today!</a>

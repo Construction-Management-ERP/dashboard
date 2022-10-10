@@ -1,11 +1,11 @@
-
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.css';
 import 'primeflex/primeflex.css';
-
+import { Avatar } from 'primereact/avatar';
+import defaultLogo from '../../assets/images/default-logo.png';
 
 export const Forgotpsw = () => {
 
@@ -13,7 +13,11 @@ export const Forgotpsw = () => {
        
         <div className="m-auto static surface-card p-4 shadow-2 border-round w-full lg:w-6">
             <div className="text-center mb-5">
-                <img src="default-logo.jpg" alt="logo" height={5} className="mb-3" />
+                <Avatar 
+                    image={defaultLogo}
+                    size="large"
+                    shape="circle"
+                />
                 <div className="text-900 text-3xl font-medium mb-3">Forgot Your Password?</div>
                 <span className="text-600 font-medium line-height-3">Please Confirm Email Address</span>
             </div>
